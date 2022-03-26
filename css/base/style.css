@@ -24,6 +24,10 @@ header h1 {
   background-color: var(--grey);
   border-top: 2px solid var(--darkgrey);
   width: 100%;
+  padding: 10px 0;
+}
+#geolocation p i {
+  padding: 0 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

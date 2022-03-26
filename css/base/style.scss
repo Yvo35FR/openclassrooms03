@@ -17,8 +17,12 @@ header h1 {
 #geolocation {
   text-align: center;
   p {
-    background-color: --grey;
-    border-top: 2px solid --darkgrey;
+    background-color: var(--grey);
+    border-top: 2px solid var(--darkgrey);
     width: 100%;
+    padding: 10px 0;
+    i {
+      padding: 0 10px;
+    }
   }
 }
