@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+h1 {
+  font-family: Shrikhand, sans-serif;
+}
+h2, h3, h4, h5, p {
+  font-family: Roboto, sans-serif;
+}
+.content {
+  width: 798px;
+  margin: 0 auto;
+}
+header h1 {
+  text-align: center;
+}
+#geolocation {
+  text-align: center;
+  p {
+    background-color: --grey;
+    border-top: 2px solid --darkgrey;
+    width: 100%;
+  }
+}
