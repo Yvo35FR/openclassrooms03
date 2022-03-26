@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Shrikhand&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@import url('https://fonts.googleapis.com/css?family=Shrikhand:300,400,500,600,700,800,900,1000&&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,800,900,1000&display=swap');
 
 h1 {
   font-family: Shrikhand, sans-serif;
@@ -9,7 +9,7 @@ h2, h3, h4, h5, p {
   font-family: Roboto, sans-serif;
 }
 .content {
-  width: 798px;
+  max-width: 798px;
   margin: 0 auto;
 }
 header h1 {
@@ -17,13 +17,60 @@ header h1 {
 }
 #geolocation {
   text-align: center;
+
   p {
     background-color: var(--grey);
     border-top: 2px solid var(--darkgrey);
     width: 100%;
     padding: 10px 0;
+
     i {
       padding: 0 10px;
     }
+  }
+}
+
+#explore {
+  background-color: var(--lightgrey);
+  text-align: center;
+  padding: 20px;
+
+  h2 {
+    padding: 5px 0;
+  }
+
+  p {
+    padding: 5px 0;
+  }
+
+  button {
+    color: var(--white);
+    background: linear-gradient(#FF79DA, #9356DC 45%);
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 15px;
+    border-radius: 20px;
+  }
+}
+
+#userguide {
+  background-color: var(--white);
+  margin: 20px 10px;
+
+  h2 {
+    padding: 10px 0;
+  }
+
+  .userguide-step {
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    box-shadow: 1px 3px 4px var(--darkgrey);
+    background-color: var(--grey);
+    margin: 10px 0;
+    padding: 10px 0;
   }
 }
