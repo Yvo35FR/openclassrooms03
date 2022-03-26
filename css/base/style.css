@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto:700");
 h1 {
-  font-family: Shrikhand, sans-serif;
+    font-family: Shrikhand, sans-serif;
+    padding: 10px 0;
 }
 
 h2, h3, h4, h5, p {
