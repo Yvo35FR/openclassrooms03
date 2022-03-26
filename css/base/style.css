@@ -61,14 +61,45 @@ header h1 {
 #userguide h2 {
   padding: 10px 0;
 }
-#userguide .userguide-step {
+#userguide .list {
+  counter-reset: li;
+  list-style-type: none;
+  font-size: 14px;
+  line-height: 18px;
+  padding-left: 10px;
+}
+#userguide .list li {
+  position: relative;
+  padding: 0px 0px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#userguide .list li:before {
+  content: counter(li);
+  counter-increment: li;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  color: var(--white);
+  text-align: center;
+  position: absolute;
+  background-color: var(--primaire);
+  left: 0;
+}
+#userguide .list li .userguide-step {
   display: flex;
   flex-direction: row;
   border-radius: 10px;
   box-shadow: 1px 3px 4px var(--darkgrey);
   background-color: var(--grey);
   margin: 10px 0;
-  padding: 10px 0;
+  padding: 20px;
+  width: 100%;
+}
+#userguide .list li .userguide-step i {
+  padding: 0 20px;
+  color: var(--darkgrey);
 }
 
 /*# sourceMappingURL=style.css.map */
