@@ -1,0 +1,67 @@
+.header-restaurant a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  position: relative;
+  left: -25%;
+}
+.header-restaurant h1 {
+  display: inline-block;
+  width: 100%;
+}
+
+#restaurant-img-full .restaurant-img-full-width {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+#restaurant-menu {
+  background-color: var(--grey);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  top: -30px;
+  padding: 20px 10px;
+  border-radius: 15px 15px 0 0;
+}
+#restaurant-menu h2 {
+  font-family: Shrikhand;
+}
+#restaurant-menu .bookmark .fa-stack .unbookmarked {
+  opacity: 0;
+}
+#restaurant-menu .bookmark .fa-stack .unbookmarked:hover {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.restaurant-items {
+  background-color: var(--grey);
+  position: relative;
+  top: -30px;
+  padding: 20px 10px;
+}
+.restaurant-items .items {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+}
+.restaurant-items .items .restaurant-item {
+  width: 100%;
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  padding: 5px;
+  margin-bottom: 20px;
+  box-shadow: 1px 3px 4px var(--darkgrey);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+/*# sourceMappingURL=restaurant.css.map */
