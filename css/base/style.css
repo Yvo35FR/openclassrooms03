@@ -56,7 +56,7 @@ header h1 {
 
 #userguide {
   background-color: var(--white);
-  margin: 20px 10px;
+  padding: 20px 10px;
 }
 #userguide h2 {
   padding: 10px 0;
@@ -66,7 +66,6 @@ header h1 {
   list-style-type: none;
   font-size: 14px;
   line-height: 18px;
-  padding-left: 10px;
 }
 #userguide .list li {
   position: relative;
@@ -100,6 +99,88 @@ header h1 {
 #userguide .list li .userguide-step i {
   padding: 0 20px;
   color: var(--darkgrey);
+}
+#userguide .list li .active-step {
+  background-color: rgba(var(--primaire-rgb), 0.1) !important;
+}
+#userguide .list li .active-step i {
+  color: var(--primaire);
+}
+
+#restaurants {
+  background-color: var(--grey);
+  padding: 20px 10px;
+}
+#restaurants h2 {
+  padding: 10px 0;
+}
+#restaurants .restaurant {
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  margin-bottom: 20px;
+  box-shadow: 1px 3px 4px var(--darkgrey);
+  align-self: stretch;
+}
+#restaurants .restaurant a {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+  color: var(--black);
+}
+#restaurants .restaurant a .restaurant-img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+  height: 150px;
+  object-fit: cover;
+}
+#restaurants .restaurant a .restaurant-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+#restaurants .restaurant a .restaurant-info h3, #restaurants .restaurant a .restaurant-info p {
+  margin: 5px;
+}
+#restaurants .restaurant a .bookmark {
+  margin: 10px;
+}
+#restaurants .restaurant a .bookmark .fa-stack i {
+  color: var(--primaire);
+}
+#restaurants .restaurant a .bookmark .fa-stack .unbookmarked {
+  opacity: 0;
+}
+#restaurants .restaurant a .bookmark .fa-stack .unbookmarked:hover {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+footer h2 {
+  font-family: Shrikhand, sans-serif;
+  margin: 10px 0;
+}
+footer li {
+  list-style-type: none;
+  margin: 10px 0;
+  padding: 5px;
+}
+footer li a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  color: white;
+  text-decoration: none;
+}
+footer li a i {
+  width: 3%;
 }
 
 /*# sourceMappingURL=style.css.map */

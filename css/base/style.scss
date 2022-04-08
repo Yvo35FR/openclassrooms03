@@ -58,7 +58,7 @@ header h1 {
 
 #userguide {
   background-color: var(--white);
-  margin: 20px 10px;
+  padding: 20px 10px;
 
   h2 {
     padding: 10px 0;
@@ -69,7 +69,6 @@ header h1 {
     list-style-type: none;
     font-size: 14px;
     line-height: 18px;
-    padding-left: 10px;
 
     li {
       position: relative;
@@ -106,8 +105,100 @@ header h1 {
           color: var(--darkgrey);
         }
       }
-    }
 
+      .active-step {
+        background-color: rgba(var(--primaire-rgb), 0.10) !important;
+
+        i {
+          color: var(--primaire);
+        }
+      }
+    }
+  }
+}
+#restaurants {
+  background-color: var(--grey);
+  padding: 20px 10px;
+
+  h2 {
+    padding: 10px 0;
   }
 
+  .restaurant {
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    margin-bottom: 20px;
+    box-shadow: 1px 3px 4px var(--darkgrey);
+    align-self: stretch;
+
+    a {
+      display: block;
+      height: 100%;
+      text-decoration: none;
+      color: var(--black);
+
+      .restaurant-img {
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+        height: 150px;
+        object-fit: cover;
+      }
+
+      .restaurant-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 5px;
+
+        h3, p {
+          margin: 5px;
+        }
+      }
+
+      .bookmark {
+        margin: 10px;
+
+        .fa-stack {
+          i {
+            color: var(--primaire);
+          }
+          .unbookmarked {
+            opacity: 0;
+            &:hover {
+              opacity: 1;
+              transition: opacity 1s;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+
+  h2 {
+    font-family: Shrikhand, sans-serif;
+    margin: 10px 0;
+  }
+
+  li {
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 5px;
+    a {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+      color: white;
+      text-decoration: none;
+      i {
+        width: 3%;
+      }
+    }
+  }
 }

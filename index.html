@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="css/base/normalize.css" />
 	<link rel="stylesheet" href="css/base/style.css" />
 	<link rel="stylesheet" href="css/utils/variables.css" />
+	<link rel="stylesheet" href="css/components/spinner.css" />
 	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
 	<title>ohmyfood</title>
 </head>
@@ -38,54 +39,77 @@
 					</section>
 				</li>
 				<li>
-					<section class="userguide-step">
+					<section class="userguide-step active-step">
 						<i class="fas fa-store fa-lg"></i>
 						<h3>Dégustez au restaurant</h3>
 					</section>
 				</li>
 			</ul>
-
-
 		</section>
 		<section id="restaurants">
 			<h2>Restaurants</h2>
+			<div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
 			<div class="restaurant">
 				<a href="#">
-					<img class="restaurant-img" src="#" alt="La palette du goût" />
-					<h3>La palette du goût</h3>
-					<p>Ménilmontant</p>
-					<div class="bookmark">
-						<i class="fas fa-heart unbookmarked"></i>
+					<div class="restaurant-img-container">
+						<img class="restaurant-img" src="images/restaurants/la-palette-des-gouts.jpg" alt="La palette du goût" />
+					</div>
+					<div class="restaurant-info">
+						<div class="restaurant-info-text">
+							<h3>La palette du goût</h3>
+							<p>Ménilmontant</p>
+						</div>
+						<div class="bookmark">
+							<span class="fa-stack"><i class="far fa-heart fa-lg fa-stack-1x"></i><i class="fas fa-heart fa-lg fa-stack-1x unbookmarked"></i></span>
+						</div>
 					</div>
 				</a>
 			</div>
 			<div class="restaurant">
 				<a href="#">
-					<img class="restaurant-img" src="#" alt="La note enchantée" />
-					<h3>La note enchantée</h3>
-					<p>Charonne</p>
-					<div class="bookmark">
-						<i class="fas fa-heart bookmarked"></i>
+					<div class="restaurant-img-container">
+						<img class="restaurant-img" src="images/restaurants/la-note-enchantee.jpg" alt="La note enchantée" />
+					</div>
+					<div class="restaurant-info">
+						<div class="restaurant-info-text">
+							<h3>La note enchantée</h3>
+							<p>Charonne</p>
+						</div>
+						<div class="bookmark">
+							<span class="fa-stack"><i class="far fa-heart fa-lg fa-stack-1x"></i><i class="fas fa-heart fa-lg fa-stack-1x unbookmarked"></i></span>
+						</div>
 					</div>
 				</a>
 			</div>
 			<div class="restaurant">
 				<a href="#">
-					<img class="restaurant-img" src="#" alt="&Agrave; la française" />
-					<h3>&Agrave; la française</h3>
-					<p>Cité rouge</p>
-					<div class="bookmark">
-						<i class="fas fa-heart unbookmarked"></i>
+					<div class="restaurant-img-container">
+						<img class="restaurant-img" src="images/restaurants/a-la-francaise.jpg" alt="&Agrave; la française" />
+					</div>
+					<div class="restaurant-info">
+						<div class="restaurant-info-text">
+							<h3>&Agrave; la française</h3>
+							<p>Cité rouge</p>
+						</div>
+						<div class="bookmark">
+							<span class="fa-stack"><i class="far fa-heart fa-lg fa-stack-1x"></i><i class="fas fa-heart fa-lg fa-stack-1x unbookmarked"></i></span>
+						</div>
 					</div>
 				</a>
 			</div>
 			<div class="restaurant">
 				<a href="#">
-					<img class="restaurant-img" src="#" alt="Le délice des sens" />
-					<h3>Le délice des sens</h3>
-					<p>Folie-Méricourt</p>
-					<div class="bookmark">
-						<i class="fas fa-heart unbookmarked"></i>
+					<div class="restaurant-img-container">
+						<img class="restaurant-img" src="images/restaurants/le-delice-des-sens.jpg" alt="Le délice des sens" />
+					</div>
+					<div class="restaurant-info">
+						<div class="restaurant-info-text">
+							<h3>Le délice des sens</h3>
+							<p>Folie-Méricourt</p>
+						</div>
+						<div class="bookmark">
+							<span class="fa-stack"><i class="far fa-heart fa-lg fa-stack-1x"></i><i class="fas fa-heart fa-lg fa-stack-1x unbookmarked"></i></span>
+						</div>
 					</div>
 				</a>
 			</div>
@@ -93,10 +117,10 @@
 		<footer>
 			<h2>ohmyfood</h2>
 			<ul>
-				<li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
-				<li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
-				<li>Mentions légales</li>
-				<li>Contact</li>
+				<li><a href="#"><i class="fas fa-utensils fa-xs"></i>Proposer un restaurant</a></li>
+				<li><a href="#"><i class="fas fa-hands-helping fa-xs"></i>Devenir partenaire</a></li>
+				<li><a href="mailto:l_yvesmarie@hotmail.com">Mentions légales</a></li>
+				<li><a href="#">Contact</a></li>
 			</ul>
 		</footer>
 	</div>
