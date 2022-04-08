@@ -1,0 +1,14 @@
+/* Variables globales */
+:root {
+  --primaire: #9356DC;
+  --primaire-rgb : 147, 86, 205;
+  --secondaire: #FF79DA;
+  --tertiaire: #99E2D0;
+  --black: #000000;
+  --grey: #F2F2F2;
+  --darkgrey: #9C9C9C;
+  --lightgrey: #F9F9F9;
+  --white: #FFFFFF;
+}
+
+/*# sourceMappingURL=variables.css.map */
