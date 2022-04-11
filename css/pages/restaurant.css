@@ -63,7 +63,10 @@
   flex-direction: row;
   align-items: center;
 }
-.restaurant-items .items .restaurant-item .restaurant-info-text-detail {
+.restaurant-items .items .restaurant-item .restaurant-info-text {
+  width: 100%;
+}
+.restaurant-items .items .restaurant-item .restaurant-info-text .restaurant-info-text-detail {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
