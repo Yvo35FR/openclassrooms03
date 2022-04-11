@@ -63,11 +63,19 @@
   flex-direction: row;
   align-items: center;
 }
+.restaurant-items .items .restaurant-item .restaurant-info-text-detail {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
 
 #order {
-  background-color: var(--lightgrey);
+  background-color: var(--grey);
   text-align: center;
   padding: 20px;
+  top: -30px;
+  position: relative;
 }
 #order button {
   color: var(--white);
