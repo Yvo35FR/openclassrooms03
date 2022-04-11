@@ -62,7 +62,7 @@
       width: 100%;
       border-radius: 15px;
       background-color: #FFFFFF;
-      padding: 5px;
+      padding: 10px;
       margin-bottom: 20px;
       box-shadow: 1px 3px 4px var(--darkgrey);
       display: flex;
@@ -70,6 +70,24 @@
       flex-direction: row;
       align-items: center;
     }
+  }
+}
+
+#order {
+  background-color: var(--lightgrey);
+  text-align: center;
+  padding: 20px;
+
+  button {
+    color: var(--white);
+    background: linear-gradient(#FF79DA, #9356DC 45%);
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 15px;
+    border-radius: 20px;
   }
 }
 
