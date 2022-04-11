@@ -55,22 +55,51 @@
   width: 100%;
   border-radius: 15px;
   background-color: #FFFFFF;
-  padding: 10px;
   margin-bottom: 20px;
   box-shadow: 1px 3px 4px var(--darkgrey);
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
+  height: 60px;
 }
 .restaurant-items .items .restaurant-item .restaurant-info-text {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 10px;
 }
 .restaurant-items .items .restaurant-item .restaurant-info-text .restaurant-info-text-detail {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
+}
+.restaurant-items .items .restaurant-item .restaurant-info-order {
+  width: 1%;
+  background-color: var(--tertiaire);
+  opacity: 0;
+  text-align: center;
+  height: 100%;
+  border-radius: 0 15px 15px 0;
+}
+.restaurant-items .items .restaurant-item .restaurant-info-order i {
+  vertical-align: middle;
+}
+.restaurant-items .items .restaurant-item .restaurant-info-order:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.restaurant-items .items .restaurant-item:hover .restaurant-info-text {
+  width: 90%;
+}
+.restaurant-items .items .restaurant-item:hover .restaurant-info-order {
+  width: 10%;
+  opacity: 1;
+  transition: all 1s 500ms;
 }
 
 #order {
@@ -90,6 +119,11 @@
   display: inline-block;
   margin: 15px;
   border-radius: 20px;
+}
+
+footer {
+  position: relative;
+  top: -30px;
 }
 
 /*# sourceMappingURL=restaurant.css.map */
